@@ -1,0 +1,1 @@
+(format ['server globalChat "Harry is a faggot, that is all";']) call broadcast;
