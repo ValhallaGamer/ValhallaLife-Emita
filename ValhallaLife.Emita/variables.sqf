@@ -240,7 +240,7 @@ SelfKilled               = 0;
 killstrafe               = 20000;			
 copteamkillstrafe	 = 20000;		
 GesetzAnzahl             = 12;         				
-GesetzArray              = ["Always Drive on the RIGHT side of the road","Always Holster weapons in Towns.","Speed limits 60 in town 90 out", "Governor and Guards May have any weapon unlicensed","Governor is immune to traffic laws","Drugs are illegal","Whaling is illegal","Hit and Run is illegal and against the rules","It is illegal to have hookers in a brothel","","","","","",""];
+GesetzArray              = ["Always Drive on the LEFT side of the road","Always Holster weapons in Towns.","Speed limits 60 in town 90 out", "Governor and Guards May have any weapon unlicensed","Governor is immune to traffic laws","Drugs are illegal","Whaling is illegal","Hit and Run is illegal and against the rules","It is illegal to have hookers in a brothel","","","","","",""];
 									
 if(debug)then{suicidepenalty = 0;respawntimeinc = 0;killedplayerinc = 0};  
 

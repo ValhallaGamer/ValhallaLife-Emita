@@ -91,7 +91,7 @@ if (isciv) then
 	false call TurnMayorFunc;
 	INV_LizenzOwner = INV_LizenzOwner - ["mayorlic"];
 	format["civ%1_mayor = 0;", player] call broadcast;
-	GesetzArray SET [0, "Always Drive on the RIGHT side of the road"]; 
+	GesetzArray SET [0, "Always Drive on the LEFT side of the road"]; 
 	GesetzArray SET [1, "Always Holster weapons in Towns."]; 
 	GesetzArray SET [2, "Speed limits 60 in town 90 out"]; 
 	GesetzArray SET [3, "Governor and Guards May have any weapon unlicensed"]; 

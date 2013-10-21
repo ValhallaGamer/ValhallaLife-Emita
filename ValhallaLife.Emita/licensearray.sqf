@@ -30,7 +30,7 @@ INV_Lizenzen =
 //["engineer",terrorbox, "Bomb Training License",900000],
 //["bomb",gundealer1,"FUll Auto Weapons Fee",200000],
 ["terror",terrorbox,"Illegal Terrorist License",3000000],
-["probator",copbasic2,localize "STRS_license_probator",12000],
+["probator",copbasic2,localize "STRS_license_probator",1000],
 ["patrol_training",copbank,localize "STRS_license_coppatrol",5000],
 //["response_training",copbank,localize "STRS_license_copresponse",5000],
 ["sobr_training",copswat,localize "STRS_license_copswat",10000],
