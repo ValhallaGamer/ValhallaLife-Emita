@@ -136,7 +136,8 @@ class Mission
 		"tahoe_k9",
 		"ca_pmc",
 		"camp_armory_misc",
-		"il_crown_victoria"
+		"il_crown_victoria",
+		"mas_uk_sfwg"
 	};
 	addOnsAuto[]=
 	{
@@ -149,11 +150,10 @@ class Mission
 		"rav_lifter",
 		"tcg_police",
 		"vilas_ctl_forces",
+		"mas_uk_sfwg",
 		"kpfs_thw_characters",
 		"ibr_police",
 		"cacharacters_pmc",
-		"foxus_astanmarines",
-		"kpfs_german_police_vest_des",
 		"caweapons_e_ammoboxes",
 		"as_eu_oa_signs",
 		"caweapons_e",
@@ -243,12 +243,13 @@ class Mission
 		resistanceWest=0;
 		resistanceEast=1;
 		startWeather=0;
-		forecastWeather=0.25;
+		startFog=0.15037525;
+		forecastWeather=0.34689015;
+		forecastFog=1;
 		year=2013;
-		month=7;
-		day=4;
-		hour=12;
-		minute=0;
+		month=10;
+		day=27;
+		hour=4;
 	};
 	class Groups
 	{
@@ -2938,7 +2939,7 @@ class Mission
 					skill=0.60000002;
 					text="Cop1";
 					init="removeallweapons this;this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)];";
-					description="Cop1 Internal Affairs/Sergeant (Admins Only) ";
+					description="Spartan 10 Internal Affairs/Sergeant (Admins Only) ";
 				};
 			};
 		};
@@ -2955,13 +2956,13 @@ class Mission
 					special="NONE";
 					id=3722;
 					side="WEST";
-					vehicle="tcg_police_officerk9";
+					vehicle="VIL_ctl_policeman_rd";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 					text="Cop2";
 					init="removeallweapons this;this setVariable [""CLAY_DogType"", ""CLAY_Dog""];this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)+.2];";
-					description="Cop2 K-9 Patrol (Trained Officers Only) ";
+					description="DOG 36 (Trained Officers Only) ";
 				};
 			};
 		};
@@ -2978,13 +2979,13 @@ class Mission
 					special="NONE";
 					id=3723;
 					side="WEST";
-					vehicle="tcg_police_officer";
+					vehicle="VIL_ctl_policeman_rd";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 					text="Cop3";
 					init="removeallweapons this;this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)+.2]; ";
-					description="Cop3 Patrol (Trained Officers Only) ";
+					description="Spartan 18 (Trained Officers Only) ";
 				};
 			};
 		};
@@ -3001,13 +3002,13 @@ class Mission
 					special="NONE";
 					id=3724;
 					side="WEST";
-					vehicle="tcg_police_officer";
+					vehicle="VIL_ctl_policeman_rd";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 					text="Cop4";
 					init="removeallweapons this; this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)+.2]; ";
-					description="Cop4 Patrol ";
+					description="Spartan 15";
 				};
 			};
 		};
@@ -3024,13 +3025,13 @@ class Mission
 					special="NONE";
 					id=3725;
 					side="WEST";
-					vehicle="tcg_police_officer";
+					vehicle="VIL_ctl_policeman_rd";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 					text="Cop5";
 					init="removeallweapons this; this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)+.2];";
-					description="Cop5 Patrol ";
+					description="Spartan 35 Patrol ";
 				};
 			};
 		};
@@ -3047,13 +3048,13 @@ class Mission
 					special="NONE";
 					id=3726;
 					side="WEST";
-					vehicle="tcg_police_officer";
+					vehicle="VIL_ctl_policeman_rd";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 					text="Cop6";
 					init="removeallweapons this; this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)+.2]; ";
-					description="Cop6 Patrol ";
+					description="Spartan 45";
 				};
 			};
 		};
@@ -3099,7 +3100,7 @@ class Mission
 					skill=0.60000002;
 					text="Cop8";
 					init="removeallweapons this; this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)+.1];  this setVariable [""isTazed"",false,true]; this addEventHandler [""HandleDamage"",{_this call DDOPP_taser_handleHit}];";
-					description="Cop8 Sheriff's Deputy (Trained Officers Only) ";
+					description="Outback 18 (Trained Officers Only) ";
 				};
 			};
 		};
@@ -3123,7 +3124,7 @@ class Mission
 					fuel=0.59397656;
 					text="Cop9";
 					init="removeallweapons this; this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)+.1];  this setVariable [""isTazed"",false,true]; this addEventHandler [""HandleDamage"",{_this call DDOPP_taser_handleHit}];";
-					description="Cop9 Sheriff's Deputy (Trained Officers Only) ";
+					description="Outback 36 (Trained Officers Only) ";
 				};
 			};
 		};
@@ -3135,18 +3136,18 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={1114.9163,4.1971216,4751.3794};
+					position[]={1114.9514,4.1295543,4751.4761};
 					azimut=-698.75702;
 					special="NONE";
 					id=3730;
 					side="WEST";
-					vehicle="vilas_sira_swat_m416";
+					vehicle="mas_uk_sfwg_cqb_mark";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 					text="Cop10";
 					init="removeallweapons this;this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)+.25]; clearMagazineCargo (unitBackpack this);";
-					description="Cop10 SWAT Team Leader (Trained Officers Only) ";
+					description="STAR 14 - SWAT Team Leader (Trained Officers Only) ";
 				};
 			};
 		};
@@ -3163,13 +3164,13 @@ class Mission
 					special="NONE";
 					id=3731;
 					side="WEST";
-					vehicle="vilas_sira_swat_m416";
+					vehicle="mas_uk_sfwg_cqb_mark";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 					text="Cop11";
 					init="removeallweapons this;this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)+.25];clearMagazineCargo (unitBackpack this);";
-					description="Cop11 SWAT (Trained Officers Only) ";
+					description="STAR 35 - SWAT (Trained Officers Only) ";
 				};
 			};
 		};
@@ -3186,13 +3187,13 @@ class Mission
 					special="NONE";
 					id=3732;
 					side="WEST";
-					vehicle="vilas_sira_swat_m416";
+					vehicle="mas_uk_sfwg_cqb_mark";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 					text="Cop12";
 					init="removeallweapons this;this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)+.25];clearMagazineCargo (unitBackpack this);";
-					description="Cop12 SWAT (Trained Officers Only) ";
+					description="STAR 36 - SWAT (Trained Officers Only) ";
 				};
 			};
 		};
@@ -3215,7 +3216,7 @@ class Mission
 					skill=0.60000002;
 					text="Cop13";
 					init="removeallweapons this; this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)+.2];";
-					description="Cop13 APO [Trained Officers Only]";
+					description="Spartan 237 [Highway Patrol]";
 				};
 			};
 		};
@@ -3301,7 +3302,7 @@ class Mission
 					skill=0.60000002;
 					text="Civ31";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) +.2]; removeallweapons this; ";
-					description="Fire Rescue (TS & Mic Required)";
+					description="Rescue 12 (TS & Mic Required)";
 				};
 			};
 		};
@@ -3324,7 +3325,7 @@ class Mission
 					skill=0.60000002;
 					text="Civ33";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) +.2]; removeallweapons this;";
-					description="Fire Rescue (TS & Mic Required)";
+					description="Rescue 14 (TS & Mic Required)";
 				};
 			};
 		};
@@ -3347,7 +3348,7 @@ class Mission
 					skill=0.60000002;
 					text="Civ32";
 					init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2) +.2]; removeallweapons this;";
-					description="Fire Rescue (TS & Mic Required)";
+					description="Rescue 13 (TS & Mic Required)";
 				};
 			};
 		};
@@ -3692,35 +3693,22 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=2;
+				items=1;
 				class Item0
 				{
-					presence=0;
-					position[]={1064.2883,4.1295543,4750.3389};
-					azimut=129.27025;
+					position[]={3160.9468,20.404289,1613.1378};
+					azimut=129.27;
 					special="NONE";
-					id=6785;
+					id=6782;
 					side="WEST";
-					vehicle="FOX_US_SFMRW_OFFD";
+					vehicle="vilas_sira_sheriffoff";
+					player="PLAY CDG";
 					leader=1;
 					rank="COLONEL";
 					skill=0.60000002;
-					text="Cop15A";
-					init="removeallweapons this; this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)+.2]; ";
-					description="Cop15 Detective (Admins Only) ";
-				};
-				class Item1
-				{
-					position[]={1063.9048,4.1295543,4750.4927};
-					azimut=-469.12201;
-					id=6783;
-					side="CIV";
-					vehicle="KPFS_Policeman_vest_des_cap";
-					player="PLAY CDG";
-					skill=0.60000002;
 					text="Cop15";
 					init="removeallweapons this; this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)+.2]; ";
-					description="Cop15 Detective (Trained Officers Only) ";
+					description="MAD MAX 14 Sgt (Admins ONLY...) ";
 				};
 			};
 		};
@@ -3729,35 +3717,22 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=2;
+				items=1;
 				class Item0
 				{
-					presence=0;
-					position[]={1063.339,4.1295543,4749.6201};
+					position[]={3160.4849,20.45575,1612.8152};
 					azimut=129.27;
 					special="NONE";
-					id=6786;
+					id=6783;
 					side="WEST";
-					vehicle="FOX_US_SFMRW_OFFD";
+					vehicle="tcg_police_Functionary";
+					player="PLAY CDG";
 					leader=1;
 					rank="COLONEL";
 					skill=0.60000002;
-					text="Cop16A";
-					init="removeallweapons this; this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)+.2]; ";
-					description="Cop16 Plainclothes (Admins Only) ";
-				};
-				class Item1
-				{
-					position[]={1063.0107,4.1295543,4749.6899};
-					azimut=-469.12201;
-					id=6784;
-					side="CIV";
-					vehicle="KPFS_Policeman_vest_des";
-					player="PLAY CDG";
-					skill=0.60000002;
 					text="Cop16";
-					init="removeallweapons this; this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)+.2];";
-					description="Cop16 Detective (Trained Officers Only)";
+					init="removeallweapons this; this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)+.2]; ";
+					description="Outback 191 - Plain clothes Deputy (Admins Only)";
 				};
 			};
 		};
@@ -3766,35 +3741,23 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=2;
+				items=1;
 				class Item0
 				{
 					presence=0;
-					position[]={1065.1353,4.1295543,4749.2075};
-					azimut=129.27;
+					position[]={1118.1853,4.1295543,4750.9819};
+					azimut=24.137699;
 					special="NONE";
-					id=6787;
+					id=6784;
 					side="WEST";
-					vehicle="FOX_US_SFMRW_OFFD";
+					vehicle="mas_uk_sfwg_cqb_mark";
+					player="PLAY CDG";
 					leader=1;
 					rank="COLONEL";
 					skill=0.60000002;
-					text="Cop14A";
-					init="removeallweapons this; this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)+.2]; ";
-					description="Cop14 Detective";
-				};
-				class Item1
-				{
-					position[]={1064.5986,4.1295543,4749.3403};
-					azimut=-469.12201;
-					id=6782;
-					side="CIV";
-					vehicle="KPFS_Policeman_vest_des_beret";
-					player="PLAY CDG";
-					skill=0.60000002;
 					text="Cop14";
 					init="removeallweapons this; this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)+.2]; ";
-					description="Cop14 Detective (Trained Officers Only)";
+					description="STAR 37 - (Trained Officers Only) ";
 				};
 			};
 		};
@@ -3807,7 +3770,7 @@ class Mission
 				class Item0
 				{
 					position[]={830.98712,4.1295543,4918.4434};
-					id=6795;
+					id=6792;
 					side="LOGIC";
 					vehicle="Logic";
 					leader=1;
@@ -70231,7 +70194,7 @@ class Mission
 			position[]={1739.1101,4.1307878,4524.1133};
 			azimut=86.431;
 			special="NONE";
-			id=6788;
+			id=6785;
 			side="EMPTY";
 			vehicle="stretcher";
 			leader=1;
@@ -70243,7 +70206,7 @@ class Mission
 			position[]={1744.5553,4.1307869,4523.4971};
 			azimut=185;
 			special="NONE";
-			id=6789;
+			id=6786;
 			side="EMPTY";
 			vehicle="armat_benchpress";
 			leader=1;
@@ -70255,7 +70218,7 @@ class Mission
 			position[]={1741.7379,4.1307878,4523.5884};
 			azimut=86.431;
 			special="NONE";
-			id=6790;
+			id=6787;
 			side="EMPTY";
 			vehicle="armat_weights";
 			leader=1;
@@ -70266,7 +70229,7 @@ class Mission
 		{
 			position[]={1754.452,9.2812738,4526.1777};
 			special="NONE";
-			id=6791;
+			id=6788;
 			side="EMPTY";
 			vehicle="Land_Misc_Cargo2A_EP1";
 			leader=1;
@@ -70278,7 +70241,7 @@ class Mission
 			position[]={1739.6621,4.1307878,4520.2974};
 			azimut=155;
 			special="NONE";
-			id=6792;
+			id=6789;
 			side="EMPTY";
 			vehicle="stretcher";
 			leader=1;
@@ -70287,10 +70250,10 @@ class Mission
 		};
 		class Item6618
 		{
-			position[]={1700.0637,4.2767372,4504.0273};
+			position[]={1696.6484,4.3923855,4503.4277};
 			azimut=180;
 			special="NONE";
-			id=6793;
+			id=6790;
 			side="EMPTY";
 			vehicle="FlagCarrierRedCross_EP1";
 			leader=1;
@@ -70299,10 +70262,10 @@ class Mission
 		};
 		class Item6619
 		{
-			position[]={1718.2686,4.2825122,4504.0273};
+			position[]={1737.6652,4.3918262,4503.2842};
 			azimut=180;
 			special="NONE";
-			id=6794;
+			id=6791;
 			side="EMPTY";
 			vehicle="FlagCarrierRedCrystal_EP1";
 			leader=1;

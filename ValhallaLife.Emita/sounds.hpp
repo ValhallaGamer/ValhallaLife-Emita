@@ -94,6 +94,13 @@ class carallarm
 		sound[] = {\snd\trolled.ogg, 4, 1};
 		titles[] = {0, ""};
 	};
+
+	class track1
+	{
+		name = "Track1"; // Name for mission editor
+		sound[] = {\snd\Track1.ogg, 4, 1};
+		titles[] = {0, ""};
+	};
 	
 	class IntruderAlarm
 	{

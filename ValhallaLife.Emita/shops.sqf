@@ -418,7 +418,7 @@ _js = ["Diamond"];
 //insurance
 _ins = ["bankversicherung"];
 //ESU and FD
-_td = ["FirefighterWeap2","firefightermag2","firetruck","rescue","Laddertruck","suburban_fd","il_silverado_pd","tcg_suburban_FD","il_ambulance","il_f350_brush","gmc_ambulance","roadcone","roadbarrierlong","roadbarriersmall","supgrade1","supgrade2","bjerk"];
+_td = ["FirefighterWeap2","firefightermag2","firetruck","rescue","Laddertruck","suburban_fd","il_silverado_pd","tcg_suburban_FD","il_ambulance","il_kw_tanker","il_f350_brush","gmc_ambulance","roadcone","roadbarrierlong","roadbarriersmall","supgrade1","supgrade2","bjerk"];
 //Resource Shop
 _rs = ["gold","iron","diamond rock"];
 //Jackos Cheesburgers
@@ -605,11 +605,12 @@ _vicecars =
 "il_fordcv_taxi",
 "tcg_taurus_taxi",
 "tcg_taurus_uc",
-"tahoe_uc_1_grey",
+"tahoe_uc_1_pink",
 "tahoe_uc_1_blue",
 "tahoe_uc_1_green",
 "tahoe_uc_1_white",
-"tahoe_uc_1_maroon",
+"tahoe_uc_1_orange",
+"tahoe_uc_1_yellow",
 "ilpd_unmarked_black",
 "ilpd_unmarked_sandstone",
 "ilpd_unmarked_maroon",
