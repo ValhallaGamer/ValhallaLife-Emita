@@ -3066,18 +3066,18 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={1102.0122,4.1295543,4730.8599};
+					position[]={1106.3322,4.2290201,4784.644};
 					azimut=-722.67401;
 					special="NONE";
 					id=3727;
 					side="WEST";
-					vehicle="US_Soldier_Pilot_EP1";
+					vehicle="VIL_ctl_policeman_rd";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 					text="Cop7";
 					init="removeallweapons this; this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)+.25];  this setVariable [""isTazed"",false,true]; this addEventHandler [""HandleDamage"",{_this call DDOPP_taser_handleHit}];";
-					description="Cop7 Police Pilot (Trained Officers Only)";
+					description="Spartan 11 (Trained Officers Only)";
 				};
 			};
 		};

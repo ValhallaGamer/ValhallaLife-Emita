@@ -68,7 +68,8 @@ switch (PlayerTeam) do
 {
     case "CIV": 
 	{
-	if(!debug)then{["civintro"] execVM "introcam.sqf";};
+	//if(!debug)then{["civintro"] execVM "introcam.sqf";};
+	if(!debug)then{["Camera"] execVM "introcam.sqf";["texte"] execVM "introcam.sqf";};
 	[] execVM "actions\civactions.sqf";
 	["handy", 1] call INV_AddInvItem;
 	onKeyPress = compile preprocessFile "actions\CivonKeyPress.sqf";
@@ -80,7 +81,8 @@ switch (PlayerTeam) do
 
     case "WEST": 
 	{
-	if(!debug)then{["copintro"] execVM "introcam.sqf";};
+	//if(!debug)then{["copintro"] execVM "introcam.sqf";};
+	if(!debug)then{["Camera"] execVM "introcam.sqf";["texte"] execVM "introcam.sqf";};
 	[] execVM "actions\copactions.sqf";
 	["handy", 1] call INV_AddInvItem;
 	onKeyPress = compile preprocessFile "actions\CoponKeyPress.sqf";
@@ -90,7 +92,8 @@ switch (PlayerTeam) do
     
     case "GUER": 
 	{
-	if(!debug)then{["govintro"] execVM "introcam.sqf";};
+	//if(!debug)then{["govintro"] execVM "introcam.sqf";};
+	if(!debug)then{["Camera"] execVM "introcam.sqf";["texte"] execVM "introcam.sqf";};
 	[] execVM "actions\govactions.sqf";
 	["handy", 1] call INV_AddInvItem;
 	onKeyPress = compile preprocessFile "actions\govonKeyPress.sqf";

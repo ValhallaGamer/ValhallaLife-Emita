@@ -13,8 +13,8 @@
 [] execVM "servermissionfile\governmentconvoy.sqf";
 ["mem"] execVM "servermissionfile\members.sqf";
 //[] execVM "servermissionfile\SCFire2.sqf";
-//[] execVM "servermissionfile\lights.sqf";
-//[] execVM "servermissionfile\blackmarket.sqf";
+[] execVM "servermissionfile\lights.sqf";
+[] execVM "servermissionfile\blackmarket.sqf";
 //=======================rob gas station init and variables================
 [] execVM "stationrobloop.sqf";
 station1money = 5000;
